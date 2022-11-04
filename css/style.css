@@ -1,0 +1,815 @@
+/************************************
+*            general          *
+************************************/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+/************************************
+*            header + nav           *
+************************************/
+#top_bar_header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.top_bar_menu_button {
+
+    padding: 2rem;
+    transition-duration: 0.1s;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#logo img {
+    width: 61.09px;
+    height: 19px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+nav a {
+    padding: 2rem;
+}
+
+nav a:hover {
+    border-top: 3px solid #0065fc;
+}
+
+/************************************
+*              body                 *
+************************************/
+.body_margin {
+    margin: 50px 10px 0px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titles {
+    line-height: 26px;
+    display: flex;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+.top_page p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 10px;
+}
+
+#search_bar {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.search_input {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+}
+
+#search_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 16px;
+    gap: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+    color: #FFFFFF;
+    transform: 200ms;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+#search_button:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+#search_icon {
+    background: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+#search_button_mobile {
+    display: none;
+}
+
+/************************************
+*             filter_bar             *
+************************************/
+
+
+#filter_bar {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #000000;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+
+.filter_cate {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border: solid 2px #F2F2F2;
+    border-left: none;
+    border-radius: 50px;
+    margin: 5px 10px 5px 15px;
+}
+
+.filter_cate h2 {
+    padding: 0 15px;
+}
+
+#filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon_cate {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 13px;
+    color: #0065FC;
+    height: 52px;
+    width: 52px;
+    border-radius: 50px;
+}
+
+.filter-label {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.filter_cate:hover {
+    cursor: pointer;
+}
+
+.filter_cate:hover .icon_cate {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+}
+
+#icon_info {
+    display: inline-block;
+    color: #0065FC;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 15px;
+    border: solid 2px #F2F2F2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.titles_heb {
+    padding-top: 35px;
+    line-height: 26px;
+    display: flex;
+    text-align: justify;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}
+
+.picture_card {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#acco_marseille {
+    width: 960px;
+    height: 705px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.card_name {
+    display: block;
+    font-weight: bold;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+    margin-top: 5px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 248px;
+    height: 215px;
+    padding: 6px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.card_price {
+    display: block;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+    margin-top: -12px;
+}
+
+.card_rating {
+    text-decoration: none;
+    color: #0065FC;
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    margin-top: -10px;
+}
+
+#accommodation_thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 3rem;
+    padding: 2rem;
+    margin-left: 5px;
+    justify-content: space-between;
+}
+
+.card_rating_neg {
+    color: #F2F2F2;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.fa-star:before {
+    width: 12px;
+    height: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h4 {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.picture_larg_card {
+    width: 137px;
+    height: 144px;
+    box-sizing: border-box;
+    order: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.famous {
+    flex-direction: column;
+    display: flex;
+    row-gap: 35px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 420px;
+    height: 705px;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+}
+
+
+
+.larg_card {
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 20px;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    width: 343px;
+}
+
+.larg_card :hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+#titles_fam {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.card_rating_fa {
+    text-decoration: none;
+    color: #0065FC;
+    list-style-type: none;
+    display: flex;
+    padding-left: 15px;
+    margin-top: 35px;
+}
+
+.titles_aco {
+    line-height: 26px;
+    display: flex;
+    text-align: justify;
+    margin-left: -20px;
+}
+.bloc_activities {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    margin-left: -20px;
+}
+
+.img_actrs {
+    width: 302px;
+    height: 445px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.contenaire {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    /*padding-right: 80px;*/
+}
+
+.card_activities_titles {
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 0 16px #0000002e;
+    width: 302px;
+    padding: 3px;
+    margin-top: -15px;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.bloc_activities :hover {
+    cursor: pointer;
+}
+
+
+#main_footer {
+    display: flex;
+    list-style-type: none;
+    background: #F2F2F2;
+    margin-top: 60px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.categ_footer {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.list_item_footer {
+    margin-top: 15px;
+}
+
+#about_footer {
+    margin-right: 200px;
+    margin-left: 25px;
+}
+
+#acco_footer {
+    margin-right: 200px;
+}
+
+.card_activities2356:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+/************************************
+*               Body                *
+*      media queries mobile         *
+************************************/
+@media (max-width: 768px) {
+
+    #top_bar_menu {
+        flex-basis: 100%;
+        display: flex;
+    }
+
+    .top_bar_menu_button {
+        flex-basis: 50%;
+        padding: 2rem;
+        font-weight: bolder 500px;
+        ;
+        text-align: center;
+    }
+
+    .top_bar_menu_button:hover {
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
+        transition-duration: 0.1s;
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0px 0px 175px;
+
+
+
+    }
+
+    #search_button {
+        display: none;
+    }
+
+    h1{
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        width: 298px;
+        height: 52px;
+        left: 20px;
+        top: 160px;
+    }
+
+    .titles {
+        width: 298px;
+        height: 52px;
+        left: 20px;
+        top: 163px;
+        margin-left: 35px;
+    }
+
+    .top_page p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        left: 20px;
+        top: 228px;
+        margin-left: 35px;
+    }
+
+    #search_button_mobile {
+        display: inline;
+        width: 48px;
+        height: 47px;
+        left: 282px;
+        top: -6px;
+        background: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+        color: #ffffff;
+        opacity: 1;
+    }
+    .fa-search{
+        color: #FFFFFF;
+    }
+
+    #search_button:hover {
+        display: none;
+        cursor: default;
+    }
+
+    #search_bar {
+        left: 30px;
+        top: 270px;
+        margin-left: 35px;
+    }
+
+    .filter_cate {
+        width: 160px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    #filter_bar{
+        margin-left: 20px;
+    }
+
+    #info{
+        margin-left: 20px;
+    }
+
+    .contenaire{
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+
+    .famous{
+        border-radius: 0;
+        height: 750px;
+
+    }
+
+    #titles_fam{
+        gap: 30px;
+        align-items: baseline;
+    }
+
+    #acco_marseille{
+        border-radius: 0;
+        background-color: #FFFFFF;
+    }
+    
+    #accommodation_thumbnails{
+        flex-direction: column;
+        margin-bottom: 50px;
+        gap: 12px;
+    }
+
+
+    .titles_aco{
+        margin-top: 700px;
+        margin-left: 10px;
+    }
+
+    .card{
+        width: 380px;
+        height: 199px;
+        margin-left: -20px;    
+    }
+
+    .afficher{
+        display: none;
+    }
+
+    .bloc_activities{
+        margin-left: 20px;
+        
+    }
+
+    .img_actrs{
+        height: 160px;;
+        width: 380px;
+    }
+    
+    .card_name{
+        margin-top: -3px;
+    }
+
+    .card_price{
+        margin-top: -20px;
+    }
+    
+    .card_activities_titles{
+        width: 380px;
+        margin-bottom: 24px;
+    }
+
+    .card_activities2356{
+        margin-left: -20px;
+        
+    }
+
+    #main_footer{
+        flex-direction: column;
+    }
+
+    #about_footer{
+        margin-left: 0px;
+    }
+    
+    #assist_footer{
+        margin-bottom: 61px;
+    }
+
+    .titles_heb{
+        margin-left:20px ;
+    }
+    #cate_name{
+        margin-left: 20px;
+    }
+    .card_rating_neg {
+        color: #F2F2F2;
+    }
+}
+
+
+ /************************************
+*      media queries tablette       *
+************************************/
+@media (min-width: 769px) {
+
+    .top_bar_menu_button {
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    #top_bar_header{
+        width: 900px;
+    }
+    
+    #logo{
+        margin-left: 72px;
+    }
+   
+    .top_page{
+        margin-left: 72px;
+    }
+
+    #info{
+        margin-left: 72px;
+    }
+
+    #filter{
+        flex-wrap: nowrap;
+    }
+
+    #filter_bar{
+        margin-top:35px ;
+        width: 1024px;
+    }
+    .filter_cate{
+        padding-right: 0px;
+    }
+
+    .contenaire{
+       display: grid;
+
+    }
+
+    #acco_marseille{
+        width: 850px;
+        margin-left: 72px;
+        height: 660px;
+    }
+
+    #accommodation_thumbnails{
+        justify-content: start;
+        column-gap: 15px;
+        row-gap: 12px;
+        padding: none;
+    }
+    .card_rating{
+        margin-top: 0
+        ;
+    }
+
+   .famous{
+        margin-left: 72px;  
+        margin-top:50px ;
+        width: 850px;
+        height:278px ;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0%;
+        gap: 25px;
+        justify-content: center;
+   }
+
+   .titles{
+    font-size: 22px;
+   }
+   #titles_fam{
+    gap: 550px;
+
+   }
+   .larg_card{
+    width: 252px;
+    height: 144px;
+    
+   }
+
+   .card_name{
+    font-size: 16px;
+   }
+
+   .picture_larg_card{
+    width: 106px;
+    height: 132px;
+   }
+   
+   .card_price{
+    font-size: 13px;
+   }
+
+   .card_rating_fa{   
+    margin-top: 50px;
+   }
+
+   .titles_aco{
+    margin-left: 72px;
+   }
+
+   .bloc_activities{
+        flex-wrap: nowrap;
+        margin-bottom: 10rem;
+        margin-left: 55px;
+        gap: 40px;  
+   }
+
+   .img_actrs{
+        width: 182px;
+        height: 220px;
+   }
+   
+   .card_activities_titles{
+        width: 182px;
+        height: 70px;
+    
+        
+   }
+   h3{
+    font-size: 16px;
+   }
+
+
+   #main_footer{
+    margin-top: 0px;
+    width: 879.65px;
+    height: 225px;
+    margin-left: 72px;
+   }
+
+   #about_footer{
+    margin-right: 60px;
+    padding-left: 30px;
+   }
+   
+   #acco_footer{
+    margin-right: 60px;
+   }
+} 
