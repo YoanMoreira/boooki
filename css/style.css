@@ -9,7 +9,7 @@
 }
 
 body {
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -105,7 +105,6 @@ nav a:hover {
     cursor: pointer;
     opacity: 0.9;
     color: #FFFFFF;
-    transform: 200ms;
     background: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
@@ -149,7 +148,6 @@ nav a:hover {
     margin-left: 10px;
     flex-wrap: wrap;
 }
-
 
 .filter_cate {
     display: flex;
@@ -204,6 +202,7 @@ nav a:hover {
 #info {
     display: flex;
     align-items: center;
+    margin-top: 25px;
 }
 
 #icon_info {
@@ -239,7 +238,7 @@ nav a:hover {
 
 
 #acco_marseille {
-    width: 960px;
+    width: 880px;
     height: 705px;
     background: #F2F2F2;
     border-radius: 20px;
@@ -286,6 +285,14 @@ nav a:hover {
     padding-left: 10px;
     margin-top: -10px;
 }
+.card_rating_fa2 {
+    text-decoration: none;
+    color: #0065FC;
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    margin-top: 35px;
+}
 
 #accommodation_thumbnails {
     display: flex;
@@ -326,7 +333,7 @@ h4 {
     width: 137px;
     height: 144px;
     box-sizing: border-box;
-    order: 5px solid #FFFFFF;
+    border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -460,12 +467,16 @@ ul {
     transition: 0.2s;
 }
 
+.link_search{
+    color: #0065FC;
+}
+
 
 /************************************
 *               Body                *
 *      media queries mobile         *
 ************************************/
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 
     #top_bar_menu {
         flex-basis: 100%;
@@ -475,8 +486,6 @@ ul {
     .top_bar_menu_button {
         flex-basis: 50%;
         padding: 2rem;
-        font-weight: bolder 500px;
-        ;
         text-align: center;
     }
 
@@ -487,12 +496,7 @@ ul {
     }
 
     #logo{
-        display: flex;
-        justify-content: center;
-        margin: 15px 0px 0px 175px;
-
-
-
+        margin: 0px 0px 0px 165px;
     }
 
     #search_button {
@@ -516,7 +520,7 @@ ul {
         height: 52px;
         left: 20px;
         top: 163px;
-        margin-left: 35px;
+        margin-left: 25px;
     }
 
     .top_page p {
@@ -525,7 +529,7 @@ ul {
         line-height: 19px;
         left: 20px;
         top: 228px;
-        margin-left: 35px;
+        margin-left: 25px;
     }
 
     #search_button_mobile {
@@ -552,7 +556,7 @@ ul {
     #search_bar {
         left: 30px;
         top: 270px;
-        margin-left: 35px;
+        margin-left: 25px;
     }
 
     .filter_cate {
@@ -562,11 +566,11 @@ ul {
     }
 
     #filter_bar{
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     #info{
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
     .contenaire{
@@ -576,13 +580,31 @@ ul {
 
     .famous{
         border-radius: 0;
-        height: 750px;
-
+        height: 700px;
     }
+
+    .card_rating_fa{   
+        margin-top: 50px;
+       }
+
+    .card_rating_fa2{   
+        margin-top: 50px;
+       }
 
     #titles_fam{
         gap: 30px;
         align-items: baseline;
+        margin-left: -45px;
+    }
+
+    .larg_card{
+        margin-left: -30px;
+        width: 334px;
+        height: 144px;
+    }
+
+    .picture_larg_card{
+        height: 133px;
     }
 
     #acco_marseille{
@@ -600,12 +622,16 @@ ul {
     .titles_aco{
         margin-top: 700px;
         margin-left: 10px;
+        display: flex;  
+        flex-wrap: wrap;
+        width: 119px;
     }
 
     .card{
-        width: 380px;
+        width: 335px;
         height: 199px;
-        margin-left: -20px;    
+        justify-content: center; 
+        margin-left: -15px;   
     }
 
     .afficher{
@@ -613,13 +639,13 @@ ul {
     }
 
     .bloc_activities{
-        margin-left: 20px;
+        margin-left: 25px;
         
     }
 
     .img_actrs{
-        height: 160px;;
-        width: 380px;
+        height: 130px;;
+        width: 334px;
     }
     
     .card_name{
@@ -631,13 +657,13 @@ ul {
     }
     
     .card_activities_titles{
-        width: 380px;
+        width: 334px;
         margin-bottom: 24px;
+        height: 60px;
     }
 
     .card_activities2356{
-        margin-left: -20px;
-        
+        margin-left: -20px;   
     }
 
     #main_footer{
@@ -653,7 +679,7 @@ ul {
     }
 
     .titles_heb{
-        margin-left:20px ;
+        margin-left: 25px ;
     }
     #cate_name{
         margin-left: 20px;
@@ -667,7 +693,7 @@ ul {
  /************************************
 *      media queries tablette       *
 ************************************/
-@media (min-width: 769px) {
+@media (min-width: 501px) and (max-width: 1025px) {
 
     .top_bar_menu_button {
 
@@ -720,11 +746,9 @@ ul {
         justify-content: start;
         column-gap: 15px;
         row-gap: 12px;
-        padding: none;
     }
     .card_rating{
-        margin-top: 0
-        ;
+        margin-top: 0;
     }
 
    .famous{
@@ -745,12 +769,11 @@ ul {
    }
    #titles_fam{
     gap: 550px;
-
    }
+
    .larg_card{
     width: 252px;
     height: 144px;
-    
    }
 
    .card_name{
@@ -769,6 +792,9 @@ ul {
    .card_rating_fa{   
     margin-top: 50px;
    }
+   .card_rating_fa2{
+    margin-top: 33px;
+   }
 
    .titles_aco{
     margin-left: 72px;
@@ -777,8 +803,9 @@ ul {
    .bloc_activities{
         flex-wrap: nowrap;
         margin-bottom: 10rem;
-        margin-left: 55px;
-        gap: 40px;  
+        margin-left: 180px;
+        gap: 40px; 
+        justify-content: center; 
    }
 
    .img_actrs{
@@ -788,15 +815,13 @@ ul {
    
    .card_activities_titles{
         width: 182px;
-        height: 70px;
-    
-        
+        height: 70px;    
    }
+
    h3{
     font-size: 16px;
    }
-
-
+    
    #main_footer{
     margin-top: 0px;
     width: 879.65px;
